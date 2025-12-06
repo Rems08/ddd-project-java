@@ -1,0 +1,20 @@
+meta {
+  name: Get Wallet Balance
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/api/wallets/{{accountId}}/balance
+  body: none
+  auth: inherit
+}
+
+vars:pre-request {
+  accountId: 8c8f3bc0-3443-4d0d-a83d-51362c0e0796
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,32 @@
+meta {
+  name: Create Booking
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/bookings
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "accountId": "{{accountId}}",
+    "checkInDate": "2025-12-15",
+    "numberOfNights": 3,
+    "rooms": {
+      "STANDARD": 1,
+      "SUPERIOR": 1
+    }
+  }
+}
+
+vars:pre-request {
+  accountId: 8c8f3bc0-3443-4d0d-a83d-51362c0e0796
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

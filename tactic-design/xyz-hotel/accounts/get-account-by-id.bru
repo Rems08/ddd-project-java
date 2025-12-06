@@ -1,0 +1,20 @@
+meta {
+  name: Get Account By ID
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8080/api/accounts/{{accountId}}
+  body: none
+  auth: inherit
+}
+
+vars:pre-request {
+  accountId: 8c8f3bc0-3443-4d0d-a83d-51362c0e0796
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
