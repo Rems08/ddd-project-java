@@ -4,8 +4,8 @@ Ici [les instructions](https://github.com/sallareznov/ddd-eductive) fournies dan
 
 ## Strategic designn
 
-PDF : [event-storming-ddd.pdf](event-storming-ddd.pdf)
+PDF : [event-storming-ddd.pdf](strategic-design/event-storming-ddd.pdf)
 
 ## Tactical design
 
-README.md : [tactic-design/README.md](tactic-design/README.md)
+README.md : [README.md](tactic-design/README.md)
